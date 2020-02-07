@@ -4,6 +4,8 @@
 */
 function mostrar()
 {
-
+	var dato;
+	dato = prompt("Coloque su nombre");  // toma el dato y lo almacena en la variable
+	document.getElementById("elNombre").value=dato;  // muestra la informacion de la variable en la id
 }
 

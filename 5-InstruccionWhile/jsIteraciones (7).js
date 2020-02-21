@@ -19,13 +19,13 @@ function mostrar()
 		if(isNaN(numero))
 		{
 			numero = prompt("Ingrese un numero valido");
-			numero = parseInt(numero);
 			if(numero == null)
 			{
-				numero = blankM;
-				respuesta = "no";
+				numero = blank;
+				respuesta= "no";
 				break
 			}
+			numero = parseInt(numero);
 		}
 		acumulador+= numero;
 

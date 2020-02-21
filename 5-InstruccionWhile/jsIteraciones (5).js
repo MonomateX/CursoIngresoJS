@@ -7,12 +7,12 @@ function mostrar()
     {   
         contador++
         sexo = prompt("ERROR! ingrese f ó m .");
-        
-        
-        
+        if(contador == 2)
+        {
+            alert("Intentos Excedidos");
+            sexo = blank
+        }
     }
-
-    
         document.getElementById('Sexo').value = sexo;
     
     

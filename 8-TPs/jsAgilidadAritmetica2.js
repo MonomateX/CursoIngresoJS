@@ -8,6 +8,9 @@ var temporizador;
 function comenzar()
 {
 	
+    selfTimeout(terminarJuego, 4000);
+    //^ Ejecuta al llegar a x tiempo
+    //selfInterval = cada x tiempo ejecuta ese comando
 }//FIN DE LA FUNCIÓN
 function Responder()
 {
@@ -15,3 +18,12 @@ function Responder()
 
 
 }//FIN DE LA FUNCIÓN
+function terminarjuego()
+{
+    console.log(" Terminando juego");
+    var otro = confirm("Juego terminado, Desea comenzar otro?")
+
+
+
+
+}

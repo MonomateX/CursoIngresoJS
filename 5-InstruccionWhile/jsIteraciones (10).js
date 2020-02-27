@@ -23,7 +23,7 @@ function mostrar()
 		while(isNaN(numero))
 		{
 			numero = prompt("Error");
-			numero = parseint(numero);
+			numero = parseInt(numero);
 		}
 		//Operaciones con numeros negativos
 		if(numero < 0)

@@ -3,7 +3,7 @@ function mostrar()
     //declaramos las variables
     var nota;
     var sexo;
-    var acumulador;
+    var acumulador = 0;
     var promedio;
     var contador = 0;
     var contadorDeVarones = 0;
@@ -22,20 +22,21 @@ function mostrar()
             nota = prompt("Ingrese una nota valida");
             nota = parseInt(nota);
         }
-
+        
         sexo = prompt("Ingrese el sexo del alumno f ó m");
         while(sexo != "f" && sexo != "m")
         {
             sexo = prompt("Ingrese el sexo del alumno f ó m");
         }
+        
         //Punto A
-        acumulador+= nota;
+        acumulador = acumulador + nota;
 
         //punto B
         if (nota < notaMasBaja)
         {
             notaMasBaja = nota;
-            sexoNotaMasBaja = sexo
+            sexoNotaMasBaja = sexo;
         }
 
         //punto C
@@ -49,4 +50,8 @@ function mostrar()
     alert(" El promedio de las notas es de " + promedio );
 
     //Punto B
+    alert(" La nota mas baja es de " + notaMasBaja + " y su sexo es " + sexoNotaMasBaja);
+
+    //Punto C
+    alert(" La cantidad de varones que su nota a sido mayor o igual a 6 a sido de " + contadorDeVarones );
 }
